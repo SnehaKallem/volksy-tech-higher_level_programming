@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-exec('a=input("#pythoniscool");
-exec(a)')
+exec('a=input("#pythoniscool");exec(a)')
