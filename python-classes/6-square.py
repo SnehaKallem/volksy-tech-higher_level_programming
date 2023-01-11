@@ -4,6 +4,7 @@
 
 class Square:
     """size"""
+
     def __init__(self, size=0):
         self.size = size
 
@@ -23,7 +24,7 @@ class Square:
     def position(self):
         return self.__position
 
-    @size.setter
+    @position.setter
     def position(self, value):
 
         if type(value) != tuple or len(value) != 2:
