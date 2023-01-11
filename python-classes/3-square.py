@@ -3,15 +3,26 @@
 
 
 class Square:
-    '''size'''
-    def _init_(square, size=0):
+
+    """square"""
+
+    def __init__(self, size=0):
+
+        """data"""
 
         if type(size) != int:
-            raise typeerror("value is not integer")
+
+            raise TypeError("size must be an integer")
+
         if size < 0:
-            raise valueerror("value is less than 0")
 
-        square.__size = size
+            raise ValueError("size must be >= 0")
 
-    def area(square):
-        return square._size*square._size
+        self.__size = size
+
+
+
+
+    def area(self):
+
+        return self.__size**2
