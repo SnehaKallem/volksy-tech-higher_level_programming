@@ -3,6 +3,8 @@
 
 
 class Square:
+    """srea of square"""
+
     def __init__(self, size):
         if type(size) != int:
             raise TypeError("size must be an integer")
