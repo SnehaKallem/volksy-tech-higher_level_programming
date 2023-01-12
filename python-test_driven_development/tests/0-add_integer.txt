@@ -20,5 +20,5 @@ Error must be raised
 TypeError:a must be an integer
 >>>add_integer(None)
 TypeError:a must be an integer
->>>add_integer(float("b"))
+>>>add_integer(float(nan))
 TypeError:a must be an integer
