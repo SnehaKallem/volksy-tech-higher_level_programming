@@ -4,8 +4,6 @@
 
 def write_file(filename="", text=""):
     """num of char"""
-    character=0
-    with open(filename, encoding='UTF-8') as file:
-        for line in file:
-            character = character + 1
-        return character
+    with open(filename, 'w', encoding="utf-8") as wf:
+        wf.write(text)
+        return len(text)
