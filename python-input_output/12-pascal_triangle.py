@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""pascal traingle"""
+
+
 def pascal_triangle(n):
+    """traingle"""
+
     if n <= 0:
         return []
     pascal = []
