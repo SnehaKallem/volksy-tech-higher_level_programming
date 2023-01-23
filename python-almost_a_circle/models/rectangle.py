@@ -97,3 +97,26 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def update(self, *args, **kwargs):
+        """Updates attributes"""
+        attrs = ["id", "width", "height", "x", "y"]
+        count = len(args)
+
+        if not args or count < 1:
+            for key, value in kwargs.items():
+                for i in range(len(attrs)):
+                    if key == attrs[i]:
+                        setattr(self, attrs[i], value)
+        elif args:
+            for i in range(count):
+                setattr(self, attrs[i], args[i])
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of the Rectangle"""
+        olddict = self.__dict__.copy()
+        newdict = {}
+        for i in olddict:
+            newkey = i.replace('_Rectangle__', "")
+            newdict[newkey] = self.__dict__[i]
+        return newdict
