@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""BASE"""
+"""BASE module contains class base"""
 
 
 class Base():
-    """base class"""
+    """base class for checking id for other classes"""
 
     __nb_objects = 0
     
