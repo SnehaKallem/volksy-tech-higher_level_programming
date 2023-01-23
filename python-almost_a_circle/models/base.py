@@ -5,8 +5,8 @@
 class Base():
     """base class for checking id for other classes"""
 
-    __nb_objects = 0 
-    
+    __nb_objects = 0
+
     def __init__(self, id=None):
         """base class with id"""
         if id is not None:
