@@ -1,2 +1,2 @@
 -- list of tables in ascending order
-SELECT tv_shows.title, tv_show_genres.genre_id FROM tv_shows ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
+SELECT tv_shows.title, tv_show_genres.genre_id FROM tv_shows ON tv_show_genres ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
