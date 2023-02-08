@@ -14,5 +14,5 @@ if __name__ = "__main__":
     query_rows = c.fetchall()
     for row in query_rows:
         print(row)
-    cur.close()
+    c.close()
     conn.close()
