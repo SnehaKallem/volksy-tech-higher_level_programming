@@ -13,7 +13,6 @@ if __name__ == "__main__":
               " WHERE states.name = %s ORDER BY cities.id ASC",
               [sys.argv[4]])
     x = c.fetchall()
-    for i in x:
-        print(", ".join(i[0])
+    print(", ".join([i[0] for i in x]))
     c.close()
     conn.close()
