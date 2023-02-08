@@ -14,6 +14,6 @@ if __name__ == "__main__":
               [sys.argv[4]])
     x = c.fetchall()
     for i in x:
-        print(i[0].join(", "))
+        print(join(", ").i[0])
     c.close()
     conn.close()
