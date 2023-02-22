@@ -1,2 +1,2 @@
-#!/usr/bin/python3
+#!/usr/bin/node
 console.log('C is fun/nPython is cool/nJavaScript is amazing')
